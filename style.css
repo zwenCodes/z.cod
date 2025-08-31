@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(img/bdybg.png);
+  width: auto;
+  color: #101820;
+}
+
+
+/* header start */
+header {
+  position: sticky;
+  top: 0px;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 50;
+  font-style: normal;
+  color: #fff;
+}
+
+header div {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(16, 24, 32, 0.3);
+  backdrop-filter: blur(3px);
+  --webkit-backdrop-filter: blur(3px)
+}
+
+header div h1 {
+  font-size: 20px;
+}
+
+header div span {
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+}
+
+header div img {
+  position: absolute;
+  width: 40px;
+  left: 0px;
+}
+
+/* nav start */
+nav ul {
+  position: relative;
+  margin: 100px;
+  display: none
+    /* flex */
+  ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-size: 50px;
+  padding: 10px;
+}
+
+nav ul li {
+  color: #fff;
+  list-style: none;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* MAIN Content START */
+main {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* First Section */
+main section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  text-align: center;
+}
+
+main section h1 {
+  font-size: 35px;
+  color: #fff;
+}
+
+main section h1 span {
+  color: yellow;
+}
+
+main section .text {
+  margin-top: 5px;
+  color: #fff;
+}
+
+main section div {
+  display: flex;
+  justify-content: center;
+  gap: 100px
+}
+
+main section div p:nth-child(n+1) {
+  color: #fff;
+  border: 1px solid orange;
+  padding: 1px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 15px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* main section p:nth-child(3) {
+  right: 0px;
+}
+
+main section p:nth-child(4) {
+  left: 0px;
+  margin-left: 80px;
+} */
+
+main section p:nth-child(n+1):hover {
+  background-color: orange;
+}
+
+/* Second Section */
+
+main section:nth-child(2){
+  position: relative;
+}
+
+main section:nth-child(2) h2 {
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
+  margin: 80px 150px;
+}
