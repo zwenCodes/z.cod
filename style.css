@@ -5,29 +5,30 @@
 
 body {
   background-image: url(img/bdybg.png);
+  background-repeat: no-repeat;
   width: auto;
-  color: #101820;
+  background-color: #000;
 }
 
 
 /* header start */
 header {
   position: sticky;
-  top: 0px;
+  top: .1px;
+  padding-top: 10px;
   font-family: "Rubik Mono One", monospace;
   font-weight: 50;
   font-style: normal;
   color: #fff;
+  background-color: rgba(16, 24, 32, 0.3);
+  backdrop-filter: blur(3px);
+  --webkit-backdrop-filter: blur(3px) 
 }
 
 header div {
-  
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(16, 24, 32, 0.3);
-  backdrop-filter: blur(3px);
-  --webkit-backdrop-filter: blur(3px)
 }
 
 header div h1 {
@@ -131,7 +132,7 @@ main section p:nth-child(n+1):hover {
 
 /* Second Section */
 
-main section:nth-child(2){
+main section:nth-child(2) {
   position: relative;
 }
 
@@ -141,4 +142,21 @@ main section:nth-child(2) h2 {
   border-bottom: 1px solid #fff;
   box-sizing: border-box;
   margin: 80px 150px;
+}
+
+main section:nth-child(2) div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+main section:nth-child(2) div span {
+  border: 1px #fff solid;
+  width: 50%;
+  height: 200px;
+  color: orange;
 }
